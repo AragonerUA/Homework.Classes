@@ -152,19 +152,19 @@ namespace massive {
 
     void Array::fill_random() {
         for(int i = 0; i < size; i++){
-            *(data + i) = rand() % 100; //рандомные числа от 0 до 100
+            *(data + i) = rand() % 100;
         }
     }
 
-    void Array::print() {
+    void Array::print_array() {
         for(int i = 0; i < size; i++){
             std::cout << *(data + i) << " ";
         }
         std::cout << std::endl;
     }
 
-    void Array::scan() {
-        std::cout << "Введите массив из " << size << " символов: \n";
+    void Array::input_array() {
+        std::cout << "Введите массив из " << size << " символов: " << std::endl;
         for (int i = 0; i < size; i++){
             std::cin >> *(data+i);
         }
