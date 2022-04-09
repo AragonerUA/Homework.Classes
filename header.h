@@ -42,7 +42,7 @@ namespace massive {
         bool operator<(Array&);
         bool operator!=(Array &);
         void fill_random();
-        void print();
-        void scan();
+        void print_array();
+        void input_array();
     };
 }
