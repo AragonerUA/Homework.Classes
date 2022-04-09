@@ -37,18 +37,18 @@ int main() {
     massive::Array first(arr_size_fir);
     massive::Array second(arr_size_sec);
     first.fill_random();
-    second.scan();
+    second.input_array();
     std::cout << "Первый массив: \n";
-    first.print();
+    first.print_array();
     std::cout << std::endl;
     std::cout << "Второй массив: \n";
-    second.print();
+    second.print_array();
     std::cout << std::endl;
 
     massive::Array third(arr_size_third);
     third = first + second;
     std::cout << "Суммарный массив: \n";
-    third.print();
+    third.print_array();
 
     std::cout << "----------------\n";
     std::cout << (third == first) << std::endl;
